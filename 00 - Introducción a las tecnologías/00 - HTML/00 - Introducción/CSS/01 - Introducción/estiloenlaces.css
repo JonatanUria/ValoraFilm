@@ -1,0 +1,29 @@
+/*Esto es para el enlace1*/
+#enlace1:link {color: #983232;}
+#enlace1:visited {color: #32984a;}
+#enlace1:hover {color: #7e78d4;}
+#enlace1:active {color: #d558a1;}
+
+/*Esto es para el enlace2*/
+#enlace2:link {color: #983232; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;}
+#enlace2:visited {color: #de72af; text-decoration: none;}
+#enlace2:hover {background-color: gold; font-size: 120%; color: #ed2f2f;}
+#enlace2:active {text-decoration: underline;}
+
+/*Esto es para el enlace3*/
+#enlace3:link, #enlace3:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#enlace3:hover, #enlace3:active {
+  background-color: green;
+  color: white;
+}
+#enlace4:hover {
+    cursor: default;
+}

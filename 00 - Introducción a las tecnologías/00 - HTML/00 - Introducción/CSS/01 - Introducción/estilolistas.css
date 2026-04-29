@@ -1,0 +1,51 @@
+/*Estilo de las listas desordenadas*/
+ul.a {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+ul.b {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+ul.c {
+  list-style-type: square;
+  list-style-position: inside;
+
+}
+
+/*Estilo de las listas ordenadas*/
+ol.d {
+  list-style-type: upper-roman;
+  background: salmon;
+  padding: 20px;
+}
+
+ol.d li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+ol.e {
+  list-style-type: lower-roman;
+  background: powderblue;
+  padding: 20px;
+  list-style-position: inside;
+}
+
+ol.e li {
+  background: mistyrose;
+  color: darkblue;
+  margin: 5px;
+}
+
+ol.f {
+  list-style-type: lower-alpha;
+}
+
+ol.g {
+  list-style-type: decimal;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ç, initial-scale=1.0">
+  <title>PseudoElements2</title>
+  <link rel="stylesheet" href="estilopseudoelements2.css">
+</head>
+
+<body>
+  <h2>Usando ::backdrop</h2>
+
+  <button id="dialogBtn">Haz click para ver el diálogo</button>
+
+  <dialog id="myDialog">
+    <form method="dialog">
+      <p>La parte de atrás del diálogo está hecha con backdrop.</p>
+      <button>Haz click para cerrar el diálogo</button>
+    </form>
+  </dialog>
+
+  <script>
+    const dialogBtn = document.getElementById('dialogBtn');
+    const myDialog = document.getElementById('myDialog');
+    dialogBtn.addEventListener('click', () => myDialog.showModal());
+  </script>
+
+</body>
+
+</html>

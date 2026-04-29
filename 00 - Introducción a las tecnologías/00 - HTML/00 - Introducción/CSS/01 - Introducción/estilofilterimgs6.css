@@ -1,0 +1,11 @@
+#img1 {
+    filter: hue-rotate(200deg);
+}
+
+#img2 {
+    filter: hue-rotate(90deg);
+}
+
+#img3 {
+    filter: hue-rotate(-90deg);
+}

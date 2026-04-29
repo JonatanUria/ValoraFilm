@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinators</title>
+  <link rel="stylesheet" href="estilocombinators.css">
+</head>
+
+<body>
+  <h2>Combinator Descendientes (espacio)</h2>
+  <h3>Selecciona todos los descendientes:</h3>
+  <div class="div1">
+    <p>Paragrafo 1 en el div.</p>
+    <p>Paragrafo 2 en el div..</p>
+    <section>
+      <p>Paragrafo 3 en el div, pero dentro de una sección.</p>
+    </section>
+  </div>
+  <p>Paragrafo 4 fuera del div.</p>
+  <p>Paragraph 5 fuera del div.</p>
+  
+  <hr>
+
+  <h2>Combinator Hijos (>)</h2>
+  <h3>Selecciona los hijos directos del elemento padre:</h3>
+  <div class="div2">
+    <p>Paragrafo 1 en el div.</p>
+    <p>Paragrafo 2 en el div..</p>
+    <section>
+      <p>Paragrafo 3 en el div, pero dentro de una sección: no es un hijo directo.</p>
+    </section>
+    <p>Paragrafo 4 fuera del div.</p>
+  </div>
+  <p>Paragraph 5 fuera del div.</p>
+  
+  <hr>
+
+  <h2>Next Sibling Combinator (+)</h2>
+  <h3>Selecciona el elemento que se encuentra justo después de otro elemento</h3>
+  <div class="div3">
+    <p>Paragrafo 1 en el div.</p>
+    <p>Paragraph 2 en el div.</p>
+  </div>
+
+  <p>Paragrafo 3. Después del div: debe estar subrayado.</p>
+  <p>Paragraph 4. Después del div.</p>
+
+  <div class="div3">
+    <p>Paragrafo 5 en el div.</p>
+    <p>Paragrafo 6 en el div.</p>
+  </div>
+
+  <p>Paragrafo 7. Después del div: debe estar subrayado.</p>
+  <p>Paragrafo 8. Después del div.</p>
+  </div>
+
+  <hr>
+
+  <h2>Subsequent-sibling Combinator (~)</h2>
+  <h3>Los elementos que siguen a un determinado elemento</h3>
+  <p>Paragrafo 1. No está en el div.</p>
+
+<div class="div4">
+  <p>Paragrafo 2. Dentro del div.</p>
+</div>
+
+<p>Paragrafo 3. Después del div: debe estar subrayado.</p>
+<code>Alo de código.</code>
+<p>Paragrafo 4. Después del div: debe estar subrayado.</p>
+
+
+
+
+
+</body>
+
+</html>

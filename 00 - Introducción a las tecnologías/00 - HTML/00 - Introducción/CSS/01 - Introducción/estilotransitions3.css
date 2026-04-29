@@ -1,0 +1,40 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+/*La transición y el hover del divtd*/
+#divtd {
+    transition: width 3s;
+    transition-delay: 1s;
+}
+
+#divtd:hover {
+    width: 300px;
+}
+
+/*La transición y el hover del divtt*/
+#divtt {
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+#divtt:hover {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    transform: rotate(180deg);
+}
+
+/*Estilo, transición y hover del button*/
+button {
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 1s ease-out, transform 1s ease-out;
+}
+
+button:hover {
+    background-color: lightgreen;
+    transform: scale(1.1);
+}

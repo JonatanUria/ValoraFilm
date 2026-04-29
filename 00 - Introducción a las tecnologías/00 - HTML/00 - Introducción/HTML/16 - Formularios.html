@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="s">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    
+<h2>Formualio para rellenar</h2>
+<form method="post" >
+  <fieldset>
+    <legend>Datos Personales</legend>
+  <label for="fname">Nombre:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br> <br>
+  <label for="lname">Apellido:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"> <br> <br>
+  <input type="submit" value="Enviar"> 
+  </fieldset>
+</form>
+<hr>
+
+<h2>Formulario para escoger (botones de radio): </h2>
+<form method="get">
+  <input type="radio" id="menordeedad" name="edades" value="Menor de Edad">
+  <label for="menordeedad">Menor de Edad</label><br>
+  <input type="radio" id="mayordeedad" name="edades" value="Mayor de Edad">
+  <label for="mayordeedad">Mayor de Edad </label><br>
+  <input type="radio" id="jubilado" name="edades" value="Jubilado">
+  <label for="jubilado">Jubilado</label> <br> <br>
+  <input type="submit" value="Enviar">
+</form> 
+<hr>
+
+<h2>Formulario para escoger (Checkbox): </h2>
+<form>
+  <input type="checkbox" id="hombre" name="genero" value="Hombre">
+  <label for="hombre">Hombre</label><br>
+  <input type="checkbox" id="mujer" name="genero" value="Mujer">
+  <label for="mujer">Mujer</label> <br>
+  <input type="checkbox" id="" nanme="nr" value="NR">
+  <label for="nr">No Responde</label>
+</form> 
+<hr>
+
+<h2>Formulario con lista desplegable: </h2>
+<form target="_blank" method="get">
+  <label for="vehículos">Elige en qué transporte prefieres moverte:</label>
+  <select name="vehículos" id="vehículos">
+    <option value="Coche">Coche</option>
+    <option value="Moto">Moto</option>
+    <option value="Autobús" selected>Autobús</option>
+    <option value="Metro">Metro</option>
+  </select>
+  <input type="submit">
+</form> 
+</body>
+</html>

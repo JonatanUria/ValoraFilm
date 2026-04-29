@@ -1,0 +1,20 @@
+/*El contador para los h1*/
+body {
+    counter-reset: section;
+}
+
+/*El contador para los h2*/
+h1 {
+    counter-reset: subsection;
+}
+
+/*Aplicamos el contador a los h1 y a los h2*/
+h1::before {
+    counter-increment: section;
+    content:"Section " counter(section) ".";
+}
+
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection);
+}

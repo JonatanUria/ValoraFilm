@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity Hierarchy Example</title>
+    <link rel="stylesheet" href="estilospecifityhierachyexample.css">
+</head>
+
+<body>
+    <h2>Ejemplo de la jerarquía de la especificidad (de más a menos)</h2>
+    <!--Esta es la forma más específica-->
+
+    <h3>Estilo en línea:</h3>
+    <p id="demo" class="test" style="color: yellow;">Hello World!</p>
+
+    <hr>
+
+    <h3>Estilo en p#id:</h3>
+    <p id="demo" class="test">Hello World!</p>
+
+    <hr>
+
+    <h3>Estilo en id:</h3>
+    <p id="demo" class="test">Hello World!</p>
+
+    <hr>
+
+    <h3> Estilo en p.class:</h3>
+    <p class="test">Hello World!</p>
+
+    <hr>
+
+    <h3> Estilo en class:</h3>
+    <p class="test">Hello World!</p>
+
+    <hr>
+
+    <h3> Estilo en p sin línea, ni id ni class:</h3>
+    <p>Hello World!</p>
+
+
+
+</body>
+
+</html>

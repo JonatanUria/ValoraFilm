@@ -1,0 +1,61 @@
+div.floatnone,
+#div1,
+#div2,
+#div3 {
+  float: none;
+  padding: 15px;
+}
+
+#div1 {
+  background: red;
+}
+
+#div2 {
+  background: yellow;
+}
+
+#div3 {
+  background: green;
+}
+
+/*Float a la izquierda*/
+div.floatleft,
+#div4,
+#div5,
+#div6 {
+  float: left;
+  padding: 15px;
+}
+
+#div4 {
+  background: red;
+}
+
+#div5 {
+  background: yellow;
+}
+
+#div6 {
+  background: green;
+}
+
+/*Float a la derecha*/
+div.floatright,
+#div7,
+#div8,
+#div9 {
+  float: right;
+  padding: 15px;
+}
+
+#div7 {
+  background: red;
+}
+
+#div8 {
+  background: yellow;
+}
+
+#div9 {
+  background: green;
+}

@@ -1,0 +1,54 @@
+
+#dotted {
+    border-style: dotted;
+    border-width: medium;
+}
+
+#dashed {
+    border-style: dashed;
+    border-width: thick;
+}
+
+#solid {
+    border-style: solid;
+    border-width: 20px 5px;
+}
+
+#double {
+    border-style: double;
+}
+
+#groove {
+    border-style: groove;
+    border-color: blue;
+    margin: 25px 50px 30px 100px;
+}
+
+#ridge {
+    border-style: ridge;
+    border-color: black yellow purple green;
+    background-color: aqua;
+}
+
+#inset {
+    border-style: inset;
+    padding: 25px 50px 75px;
+}
+
+#outset {
+    border-style: outset;
+}
+
+#none {
+    border-style: none;
+    outline: thick outset darkred;
+    outline-offset: 5px;
+}
+
+#hidden {
+    border-style: hidden;
+}
+
+#mix {
+    border-style: dotted dashed solid double;
+}

@@ -1,0 +1,23 @@
+div.tablecontainer {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: dodgerblue;
+}
+
+tr:hover {
+  background-color: darkorange;
+}

@@ -1,0 +1,36 @@
+/*Estilo función ScaleX*/
+#divix,
+#divdx {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+
+}
+
+#divix {
+    margin: 100px;
+    transform: scaleX(2);
+}
+
+#divdx {
+    transform: scaleX(0.5);
+}
+
+/*Estilo función ScaleY*/
+#diviy,
+#divdy {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#diviy {
+    margin: 160px;
+    transform: scaleY(3);
+}
+
+#divdy {
+    transform: scaleY(0.5);
+}

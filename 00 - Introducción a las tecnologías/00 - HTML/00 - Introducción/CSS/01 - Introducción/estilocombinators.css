@@ -1,0 +1,15 @@
+.div1 p {
+  background-color: yellow;
+}
+
+.div2  > p { /* Descendientes del DIV2*/
+background-color: yellow;
+}
+
+.div3 + p { /* El primero parrafo que le seguiria al div.*/
+background-color: yellow;
+}
+
+.div4 ~ p { /*Los parrafos que siguen al div*/
+  background-color: yellow;
+}

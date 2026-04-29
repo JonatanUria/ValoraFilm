@@ -1,0 +1,24 @@
+#div1 {
+  background-image: url(img/bookicon.png), url(img/mountains.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+
+#div2 {
+    border: 1px solid black;
+    background-image: url(img/bookicon.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+    padding: 15px;
+}
+
+#div3 {
+    border: 1px solid black;
+    background-image: url(img/bookicon.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+

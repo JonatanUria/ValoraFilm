@@ -1,0 +1,18 @@
+div {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#divrx {
+    transform: rotateX(150deg);
+}
+
+#divry {
+    transform: rotateY(150deg);
+}
+
+#divrz {
+    transform: rotateZ(90deg);
+}

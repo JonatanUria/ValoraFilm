@@ -1,0 +1,30 @@
+/*Ejemplo usando first-line*/
+#p1::first-line {
+    color: red;
+    font-variant: small-caps;
+    font-size: 19px;
+}
+
+/*Ejemplo usando first-letter*/
+#p2::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+/*Ejemplo usando before y after*/
+#h31::before,
+#h31::after {
+    content: url(img/bookicon.png);
+}
+
+/*Ejemplo usando marker*/
+#ul1 li::marker {
+    color: blue;
+    font-size: 23px;
+}
+
+/*Ejemplo usando selection*/
+.class1::selection {
+    color: red;
+    background-color: yellow;
+}

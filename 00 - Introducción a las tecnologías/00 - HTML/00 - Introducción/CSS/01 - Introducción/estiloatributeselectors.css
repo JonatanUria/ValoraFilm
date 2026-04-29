@@ -1,0 +1,44 @@
+/*Selector 1*/
+/*Selector de enlaces con target*/
+a[target] {
+  background-color: yellow;
+}
+
+/*Lo mismo que arriba, pero solo seleccionando el link que tiene el target blank*/
+a[target=_blank] {
+  color: red;
+}
+
+/*Selector 2*/
+/*Selector de atributos con valor img*/
+[title~="img"] {
+  border: 5px solid yellow;
+}
+
+/*Selector 3*/
+/*Selector de atributos con valor top:
+solo va a seleccionar los que tengan el title top
+al principio o -top*/
+[class|=top] {
+  background: yellow;
+}
+
+/*Selector 4*/
+/*Selector de atributos con valor top1:
+va a seleccionar todos los que empiecen por top1*/
+[class^="top1"] {
+  background: yellow;
+}
+
+/*Selector 5*/
+/*Selector de atributos con valor test:
+va a seleccionar todos los que acaben con test*/
+[class$="test"] {
+  background: yellow;
+}
+
+/*Como el de arriba, pero va a seleccionar los que 
+contengan se*/
+[class*="se"] {
+  background: rgb(127, 219, 47);
+}

@@ -1,0 +1,7 @@
+#img1 {
+    filter: contrast(150%);
+}
+
+#img2 {
+    filter: contrast(50%);
+}

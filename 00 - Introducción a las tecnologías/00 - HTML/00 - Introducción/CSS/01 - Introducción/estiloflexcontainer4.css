@@ -1,0 +1,79 @@
+.container1 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    background-color: DodgerBlue;
+}
+
+.container1 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container2 {
+    display: flex;
+    height: 200px;
+    align-items: flex-start;
+    background-color: DodgerBlue;
+}
+
+.container2 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container3 {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+    background-color: DodgerBlue;
+}
+
+.container3 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container4 {
+    display: flex;
+    height: 200px;
+    align-items: stretch;
+    background-color: DodgerBlue;
+}
+
+.container4 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container5 {
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+    background-color: DodgerBlue;
+}
+
+.container5 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}

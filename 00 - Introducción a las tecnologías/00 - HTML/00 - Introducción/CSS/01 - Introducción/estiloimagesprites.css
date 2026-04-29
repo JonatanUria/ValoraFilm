@@ -1,0 +1,73 @@
+#navlist {
+    position: relative;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li,
+#navlist a {
+    height: 44px;
+    display: block;
+}
+
+/*El estilo de las imágenes*/
+#home {
+    left: 0px;
+}
+
+#home img {
+    width: 43px;
+    height: 44px;
+    background: url('./img/home.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pre {
+    left: 80px
+}
+
+#prev img {
+    width: 43px;
+    height: 44px;
+    background: url('./img/pre.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#next {
+    left: 80px
+}
+
+#next img {
+    width: 43px;
+    height: 44px;
+    background: url('./img/next.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*El hover de las imágenes*/
+
+#home img:hover {
+    background: url('img/home.gif') 0 -45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#prev img:hover {
+    background: url('img/pre.gif') -47px -45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#next img:hover {
+    background: url('img/next.png') -91px -45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

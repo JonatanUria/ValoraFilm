@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+.centerflexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px solid green; 
+}
+.centergrid {
+  display: grid;
+  place-items: center;
+  height: 100px;
+  border: 3px solid green; 
+}
+

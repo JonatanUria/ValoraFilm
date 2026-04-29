@@ -1,0 +1,11 @@
+#img1 {
+    filter: sepia(1);
+}
+
+#img2 {
+    filter: sepia(60%);
+}
+
+#img3 {
+    filter: sepia(0.4);
+}

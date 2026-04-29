@@ -1,0 +1,23 @@
+/*Ejemplo background-size:contain*/
+#div1 {
+  border: 1px solid black;
+  background-image: url(img/bookicon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*Ejemplo background-size:cover*/
+#div2 {
+  border: 1px solid black;
+  background-image: url(img/bookicon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Ejemplo background-size:auto*/
+#div3 {
+  border: 1px solid black;
+  background-image: url(img/bookicon.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}

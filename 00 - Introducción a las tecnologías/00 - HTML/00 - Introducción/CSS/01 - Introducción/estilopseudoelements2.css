@@ -1,0 +1,10 @@
+/*Usando backdrop*/
+button {
+  font-size: 15px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+dialog::backdrop {
+  background-color: lightgreen;
+}

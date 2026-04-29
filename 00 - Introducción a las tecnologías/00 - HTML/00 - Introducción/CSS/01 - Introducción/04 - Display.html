@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="estilodisplay.css">
+</head>
+<body>
+<p class="flip" onclick="myFunction()">Click para mostrar/ocultar el panel</p>
+
+<div id="panel">
+  <p>Novedades.</p>
+  <p>Películas con mejor valoración.</p>
+  <p>Películas más valoradas.</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("panel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+    
+</body>
+</html>

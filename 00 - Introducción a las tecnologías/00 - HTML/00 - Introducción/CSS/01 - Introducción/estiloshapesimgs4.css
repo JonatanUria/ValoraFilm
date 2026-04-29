@@ -1,0 +1,10 @@
+img {
+    float: left;
+    clip-path: ellipse(40% 50%);
+    shape-outside: ellipse(45% 50%);
+}
+
+div {
+    border: 1px solid green;
+    padding: 10px;
+}

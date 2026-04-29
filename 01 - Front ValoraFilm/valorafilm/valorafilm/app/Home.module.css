@@ -1,0 +1,17 @@
+.h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.container_movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vars 3</title>
+    <link rel="stylesheet" href="estilovars3.css">
+    <script>
+        /*Creamos una variable en script*/
+        var rootHtmlElement = document.querySelector(':root');
+
+
+        /*Función get*/
+        function myFunction_get() {
+            var cssElements = getComputedStyle(rootHtmlElement);
+
+            alert("El valor de la variable es: " + cssElements.getPropertyValue('--primary-bg-color'));
+
+        }
+
+        /*Función set*/
+        function myFunction_set() {
+            rootHtmlElement.style.setProperty('--primary-bg-color', 'green');
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Obtener y cambiar las variables CSS con JavaScript</h1>
+
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+            felis blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+            felis blandit.</p>
+        <p class="note">This is a note!</p>
+    </div>
+    <br>
+    <button type="button" onclick="myFunction_get()">Obtener el valor de la variable con JavaScript</button>
+    <button type="button" onclick="myFunction_set()">Cambiar el valor de la Variable con JavaScript</button>
+
+</body>
+
+</html>

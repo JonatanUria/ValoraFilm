@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios2</title>
+</head>
+<body>
+<h2>Botón de Saludo:</h2>
+<button type="button" onclick="alert('¡Hola Juan, me debes pasta!')">Púlsame</button>
+<hr>
+
+<h2>Esto es una Datalist: </h2>
+<p>Escoge qué mascota prefieres:</p>
+<form>
+    <input list="mascotas" name="mascotas">
+     <datalist id="mascotas">
+     <option value="Perro"></option>
+     <option value="Gato"></option>
+     <option value="Loro"></option>
+     <option value="Hamster"></option>    
+     <option value="Serpiente"></option>
+</datalist>
+
+<input type="submit">
+</form>    
+<hr>
+
+<h2>Esto es un formulario para contraseñas:</h2>
+<form method="post">
+  <label for="nombre">Nombre de Usuario:</label><br>
+  <input type="text" id="nombre" name="nombre" required placeholder="Introduce tu usuario"><br>
+  <label for="contraseña">Contraseña:</label><br>
+  <input type="password" id="contraseña" name="contraseña" required><br><br>
+  
+  <input type="submit">
+  <input type="reset">
+</form>
+<hr>
+
+<h2>Esto es un formulario para introducir fechas: </h2>
+<form method="post">
+  <label for="fechanacimiento">Escribe tu fecha de Nacimiento:</label>
+  <input type="date" id="fechanacimiento" name="fechanacimiento">
+  
+  <input type="submit">
+</form>
+<hr>
+
+<h2>Otro formulario para introducir fechas con mínimos y máximos:</h2>
+<form>
+  <label for="datemin">Introduce una fecha después del 17/11/1999:</label>
+  <input type="date" id="datemin" name="datemin" min="1999-11-17"><br><br>
+
+  <label for="datemax">Introduce una fecha antes del 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1980-01-01"><br><br>
+  
+  <input type="submit">
+</form>
+<hr>
+
+<h2>Formulario para introducir la hora y los minutos:</h2>
+<form>
+  <label for="appt">Selecciona la hora:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit">
+</form>
+
+    
+</body>
+</html>

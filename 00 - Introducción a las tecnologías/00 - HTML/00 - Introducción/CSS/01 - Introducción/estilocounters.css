@@ -1,0 +1,10 @@
+/*Con esto creamos el contador Sección*/
+body {
+    counter-reset: section;
+}
+
+/*Con esto le añadimos al h2 el contador para númerarlos*/
+h2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}

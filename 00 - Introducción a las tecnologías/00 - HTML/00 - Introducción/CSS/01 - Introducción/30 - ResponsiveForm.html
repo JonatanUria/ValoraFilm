@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="estiloresponsiveform.css">
+</head>
+<body>
+<h2>Formulario Ajustable</h2>
+<p>Aumenta o disminuye el tamaño de la ventana para ver cómo el formulario se ajusta</p>
+  
+<div class="responsive-form">
+
+    <form action="">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="firstname" placeholder="Escribe tu Nombre">
+
+        <label for="lname">Apellido:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Escribe tu Apellido">
+
+        <label for="country">País</label>
+        <select name="country" id="country">
+            <option value="españa">España</option>
+            <option value="francia">Francia</option>
+            <option value="italia">Italia</option>
+            <option value="argentina">Argentina</option>
+            <option value="estados unidos">Estados Unidos</option>
+        </select>
+
+        <label for="message">Comentario:</label>
+        <textarea name="message" id="message" placeholder="Escribe tu comentario..."></textarea>
+
+        <input type="submit">
+    </form>
+
+</div>
+
+</body>
+</html>
