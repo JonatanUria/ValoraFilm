@@ -1,0 +1,9 @@
+#p1,
+#p2 {
+  border: 1px solid red;
+}
+
+/*El strong del p2 hereda de forma explícita de el borde de los p anteriores*/
+#p2 strong {
+    border: inherit;
+}

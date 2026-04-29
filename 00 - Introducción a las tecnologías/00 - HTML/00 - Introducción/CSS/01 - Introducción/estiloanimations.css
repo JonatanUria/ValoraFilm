@@ -1,0 +1,88 @@
+/*Estilo de los div*/
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+
+/*Animación del div1*/
+#div1 {
+    animation-name: myAnimation1;
+    animation-duration: 4s;
+}
+
+@keyframes myAnimation1 {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+
+}
+
+/*Animación del div2*/
+#div2 {
+    position: relative;
+    animation-name: myAnimation2;
+    animation-duration: 4s;
+}
+
+@keyframes myAnimation2 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+/*Animación del div3*/
+#div3 {
+    position: relative;
+    animation-name: myAnimation2;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+/*Animación del div4*/
+#div4 {
+    position: relative;
+    animation-name: myAnimation2;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}

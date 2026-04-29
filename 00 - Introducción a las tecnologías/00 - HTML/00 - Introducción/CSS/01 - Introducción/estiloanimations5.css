@@ -1,0 +1,65 @@
+/*Estilo de los div*/
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+}
+
+/*Animaciones de los div*/
+#divf {
+    animation-name: myAnimation1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation1 {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+        background-color: blue;
+    }
+
+}
+
+#divb {
+    animation-name: myAnimation2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes myAnimation2 {
+    from {
+        top: 0px;
+        background-color: yellow;
+    }
+
+    to {
+        top: 200px;
+    }
+
+}
+
+#divbt {
+    animation-name: myAnimation3;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes myAnimation3 {
+    from {
+        top: 0px;
+        background-color: yellow;
+    }
+
+    to {
+        top: 200px;
+        background-color: blue;
+    }
+
+}

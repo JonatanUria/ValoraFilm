@@ -1,0 +1,54 @@
+CREATE DATABASE VALORAFILM;
+USE VALORAFILM;
+
+CREATE TABLE VALORAFILM.USUARIOS (
+    ID_USUARIO INT AUTO_INCREMENT NOT NULL PRIMARY KEY COMMENT 'Identificador único del usuario.',
+    NOMBRE_USUARIO VARCHAR(50) NOT NULL COMMENT 'Nombre del usuario',
+    CREDENCIALES VARCHAR(255) NOT NULL COMMENT 'Contraseña del usuario',
+    GENERO VARCHAR(30) COMMENT 'Género del usuario',
+    EMAIL VARCHAR(50) NOT NULL COMMENT 'Correo electrónico del usuario',
+    PAIS_ORIGEN VARCHAR(55) COMMENT 'País de origen del usuario',
+    FOTO_PERFIL BLOB COMMENT 'Foto de perfil utilizada por el usuario',
+    TIPO_USUARIO VARCHAR(1) NOT NULL COMMENT 'Tipo de Usuario. A = ADMIN, G = GUEST',
+    FECHA_REGISTRO TIMESTAMP NOT NULL COMMENT 'Fecha en la que se registró el usuario',
+    FECHA_NACIMIENTO TIMESTAMP COMMENT 'Fecha de nacimiento del usuario'
+);
+
+DESC VALORAFILM.USUARIOS;
+
+select * From VALORAFILM.PELICULAS;
+
+CREATE TABLE VALORAFILM.PELICULAS (
+    ID_PELICULA INT AUTO_INCREMENT NOT NULL PRIMARY KEY COMMENT 'Identificador único de la películas',
+    TITULO VARCHAR(180) NOT NULL COMMENT 'Título de la películas',
+    PORTADA BLOB NOT NULL COMMENT 'Portada de la película',
+    GENERO VARCHAR(30) NOT NULL COMMENT 'Género de la película',
+    FECHA_ESTRENO TIMESTAMP NOT NULL COMMENT 'fecha de estreno de la película',
+    PAIS_ORIGEN VARCHAR(55) NOT NULL COMMENT 'País de origen de la película',
+    DURACION SMALLINT NOT NULL COMMENT 'Duración de la película en minutos',
+    EDAD_MINIMA SMALLINT NOT NULL COMMENT 'Edad mínima para ver la película',
+    VALORACION_MEDIA_USUARIO FLOAT(4,2) NOT NULL COMMENT 'Media de las valoraciones de los usuarios',
+    VALORACION_CRITICOS FLOAT(4,2) NOT NULL COMMENT 'Media de las valoraciones de los críticos',
+    FECHA_ALTA TIMESTAMP NOT NULL COMMENT 'Fecha de alta de la película en la web',
+    ID_USUARIO_ALTA INT NOT NULL COMMENT 'Identificador único del usuario que le ha dado de alta',
+    FOREIGN KEY (ID_USUARIO_ALTA) REFERENCES USUARIOS(ID_USUARIO)
+);
+
+desc VALORAFILM.PELICULAS;
+
+CREATE TABLE VALORAFILM.SINOPSIS (
+    ID_PELICULA INT PRIMARY KEY NOT NULL COMMENT 'Identificador único de la película',
+    SINOPSIS VARCHAR(10000) NOT NULL COMMENT 'Sinopsis de la película',
+    FOREIGN KEY (ID_PELICULA) REFERENCES PELICULAS(ID_PELICULA)
+);
+
+CREATE TABLE VALORAFILM.CRITICAS_PELICULAS(
+    ID_PELICULA INT NOT NULL COMMENT 'Identificador único de la película',
+    ID_USUARIO INT NOT NULL COMMENT 'Identificador único del usuario',
+    CRITICA VARCHAR(1000) NOT NULL COMMENT 'Crítica de la película',
+    VALORACION_USUARIO FLOAT(4,2) NOT NULL COMMENT 'Puntuación del 1 al 10 del usuario',
+    FECHA_CRITICA TIMESTAMP NOT NULL COMMENT 'Fecha de la crítica',
+    PRIMARY KEY (ID_PELICULA, ID_USUARIO),
+    FOREIGN KEY (ID_PELICULA) REFERENCES PELICULAS (ID_PELICULA),
+    FOREIGN KEY (ID_USUARIO) REFERENCES USUARIOS (ID_USUARIO)
+);

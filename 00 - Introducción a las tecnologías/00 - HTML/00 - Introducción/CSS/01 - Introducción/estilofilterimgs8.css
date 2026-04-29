@@ -1,0 +1,11 @@
+#img1 {
+    filter: saturate(0);
+}
+
+#img2 {
+    filter: saturate(100%);
+}
+
+#img3 {
+    filter: saturate(200%);
+}

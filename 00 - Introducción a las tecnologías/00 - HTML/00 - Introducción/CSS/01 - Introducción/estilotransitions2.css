@@ -1,0 +1,35 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+/*Transición Linear*/
+#divl {
+    transition-timing-function: linear;
+}
+
+/*Transición Ease*/
+#dive {
+    transition-timing-function: ease;
+}
+
+/*Transición Ease-in*/
+#divei {
+    transition-timing-function: ease-in;
+}
+
+/*Transición Ease-out*/
+#diveo {
+    transition-timing-function: ease-out;
+}
+
+/*Transición Ease-in-out*/
+#diveio {
+    transition-timing-function: ease-in-out;
+}
+
+div:hover {
+    width: 300px;
+}

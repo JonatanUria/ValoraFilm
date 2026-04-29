@@ -1,0 +1,46 @@
+/*Estilo Ejemplo Translate*/
+#div1 {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(50px, 100px);
+}
+
+/*Estilo Ejemplos Rotate*/
+#div2,
+#div2r,
+#div2l {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+
+
+}
+
+#div2r {
+    transform: rotate(20deg);
+}
+
+#div2l {
+    transform: rotate(-20deg);
+}
+
+/*Estilo Ejemplos Scale*/
+#div3i,
+#div3d {
+    margin: 160px;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#div3i {
+    transform: scale(2, 3);
+}
+
+#div3d {
+    transform: scale(0.5,0.5);
+}

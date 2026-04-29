@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.responsive-form {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #04AA6D;
+    ;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*Estilo del formulario*/
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Estilo de las etiquetas*/
+label {
+    min-width: 48%;
+    margin-bottom: 10px;
+}
+
+/*Estilo de los inputs*/
+input[type=text],
+select {
+    min-width: 45%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Estilo del textarea*/
+textarea {
+    min-width: 45%;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/*El media para hacer ajustable el formulario*/
+@media screen and (max-width: 600px) {
+
+    label,
+    input[type=text],
+    input[type=submit],
+    select,
+    textarea {
+        flex: 100%;
+        min-width: 100%;
+    }
+
+}

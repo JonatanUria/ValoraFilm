@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+/*Estilo de la barra*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Esto solo se aplica al enlace Home*/
+ul.topnav li a.active {
+    background-color: #04AA6D;
+}
+
+/*Esto se aplica a todos los enlaces, menos al de Home*/
+ul.topnav li a:hover:not(.active) {
+    background-color: #f46d2a;
+}
+
+/*Esto solo se aplica al enlace About*/
+ul.topnav li.right {
+    float: right;
+}
+
+/*Esto es para hacer que la barra sea ajustable*/
+@media screen and (max-width: 600px) {
+
+    ul.topnav li,
+    ul.topnav li.right {
+        float: none;
+    }
+
+}
+
+/*Estilo del div*/
+div {
+    padding:0 16px ;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Text Effects</title>
+    <link rel="stylesheet" href="estilotexteffect.css">
+</head>
+
+<body>
+    <h1>La propiedad text-overflow</h1>
+
+    <h2>text-overflow: clip:</h2>
+    <p id="test1">This is some long text that will not fit in the box</p>
+
+    <h2>text-overflow: ellipsis:</h2>
+    <p id="test2">This is some long text that will not fit in the box</p>
+
+    <hr>
+
+    <h1>La propiedad word-wrap</h1>
+
+    <h2>Sin word-wrap</h2>
+    <p id="test3">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
+        break and wrap to the next line.</p>
+
+    <h2>Con word-wrap: break-word</h2>
+    <p id="test4">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
+        break and wrap to the next line.</p>
+
+    <hr>
+
+    <h1>La propiedad word-break</h1>
+
+    <p id="test5">This paragraph contains some text. This line will-break-at-hyphens.</p>
+    <p id="test6">This paragraph contains some text. This line will break at any character.</p>
+
+    <hr>
+
+    <h1>La propiedad writting-mode</h1>
+
+    <p id="test7">Este texto tiene writing-mode por defecto.</p>
+
+    <p>Este texto tiene un elemento span <span>vertical-rl</span> writing-mode.</p>
+
+    <p id="test8">Este texto tiene writing-mode: vertical-lr.</p>
+
+</body>
+
+</html>

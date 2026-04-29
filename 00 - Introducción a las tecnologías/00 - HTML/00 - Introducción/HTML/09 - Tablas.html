@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+       /*Esto es para la primera tabla*/
+        .table1, .table1 th, .table1 td {
+            border: 1px solid black;
+            border-radius: 10px;
+    
+        }
+        /*Esto es para la segunda tabla*/
+        .table2, .table2 th, .table2 td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            
+        }
+        .table2 th, .table2 td {
+            background-color: #96D4D4;
+        }
+        /*Esto es para la tercera tabla*/
+        .table3 {
+            border-collapse: collapse;
+        }
+        .table3 th, .table3 td {
+            border-style: dotted;
+            border-color: brown;
+            
+        }
+        /*Esto es para la cuarta tabla*/
+        .table4, .table4 th, .table4 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+        /*Esto es para la quinta tabla*/
+        .table5, .table5 th, .table5 td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+        .table5 th {
+            text-align: left;
+        }
+        /*Esto es para la sexta tabla*/
+        .table6, .table6 th, .table6 td {
+            border: 1px solid green;
+            border-collapse: collapse;
+        }
+    
+        
+        
+    </style>
+</head>
+<body>
+    <table class="table1">
+    <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>Puesto</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>678954M</td>
+        <td>Asesor</td>
+    </tr>
+    <tr>
+        <td>Marcos</td>
+        <td>876769L</td>
+        <td>Abogado</td>
+    </tr>
+    <tr>
+        <td>Aurelio</td>
+        <td>976769S</td>
+        <td>Redactor</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>876769L</td>
+        <td>Administrativa</td>
+    </tr>
+    </table>
+    <hr>
+    <table class="table2">
+    <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>Puesto</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>678954M</td>
+        <td>Asesor</td>
+    </tr>
+    <tr>
+        <td>Marcos</td>
+        <td>876769L</td>
+        <td>Abogado</td>
+    </tr>
+    <tr>
+        <td>Aurelio</td>
+        <td>976769S</td>
+        <td>Redactor</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>876769L</td>
+        <td>Administrativa</td>
+    </tr>
+    </table>
+    <hr>
+    <table class="table3">
+    <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>Puesto</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>678954M</td>
+        <td>Asesor</td>
+    </tr>
+    <tr>
+        <td>Marcos</td>
+        <td>876769L</td>
+        <td>Abogado</td>
+    </tr>
+    <tr>
+        <td>Aurelio</td>
+        <td>976769S</td>
+        <td>Redactor</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>876769L</td>
+        <td>Administrativa</td>
+    </tr>
+    </table>
+    <hr>
+    <!--Aquí vamos a cambiar el ancho de la tabla-->
+    <table class="table4" style="width: 58%;">
+    <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <!--Aquí vamos a cambiar el ancho de la columna Puesto-->
+        <th style="width: 68%;">Puesto</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>678954M</td>
+        <td>Asesor</td>
+    </tr>
+    <tr>
+        <td>Marcos</td>
+        <td>876769L</td>
+        <td>Abogado</td>
+    </tr>
+    <!--Aquí cambiamos la altura de fila-->
+    <tr style="height: 43px;">
+        <td>Aurelio</td>
+        <td>976769S</td>
+        <td>Redactor</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>876769L</td>
+        <td>Administrativa</td>
+    </tr>
+    </table>
+    <hr>
+    <table class="table5">
+        <caption>Trabajadores y Categorías</caption>
+    <tr>
+        <th>Nombre</th>
+        <td>Juan</td>
+        <td>Marcos</td>
+        <td>Aurelio</td>
+        <td>Emma</td>
+    </tr>
+    <tr>
+        <th>DNI</th>
+        <td>678954M</td>
+        <td>876769L</td>
+        <td>976769A</td>
+        <td>876769L</td>
+    </tr>
+    <tr>
+        <th>Puesto</th>
+        <td>Redactor</td>
+        <td>Abogado</td>
+        <td>Asesor</td>
+        <td>Administrativo</td>
+    </tr>
+    </table>
+    <hr>
+    <table class="table6">
+    <tr>
+        <th colspan="2">Nombre y Apellidos</th>
+        <th>DNI</th>
+        <th>Puesto</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>García</td>
+        <td>678954M</td>
+        <td>Asesor</td>
+    </tr>
+    <tr>
+        <td>Marcos</td>
+        <td>Peréz</td>
+        <td>876769L</td>
+        <td>Abogado</td>
+    </tr>
+    <tr>
+        <td>Aurelio</td>
+        <td>Rodríguez</td>
+        <td>976769S</td>
+        <td>Redactor</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>Sevilla</td>
+        <td>876769L</td>
+        <td>Administrativa</td>
+    </tr>
+    </table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #9fac10;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  cursor: pointer;  
+}
+
+#panel {
+  display: none;
+  cursor: auto;
+}

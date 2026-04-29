@@ -1,0 +1,23 @@
+span.a {
+    display: inline;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid red;
+    text-align: center;
+}
+
+span.c {
+    display: block;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid red;
+    text-align: center;
+}

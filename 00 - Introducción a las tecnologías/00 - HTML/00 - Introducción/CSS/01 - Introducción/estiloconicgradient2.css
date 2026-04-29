@@ -1,0 +1,31 @@
+#grad1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    background-image: conic-gradient(from 90deg, red, yellow, green);
+    border-radius: 50%;
+}
+
+#grad2 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    background-image: conic-gradient(at 60% 45%, red, yellow, green);
+    border-radius: 50%;
+}
+
+#grad3 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    background-image: repeating-conic-gradient(red 10%, yellow 20%);
+    border-radius: 50%;
+}
+
+#grad4 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+    border-radius: 50%;
+}

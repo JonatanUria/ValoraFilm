@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios3</title>
+</head>
+<body>
+    
+<h2>Este es un formulario para introducir un número de teléfono:</h2>
+    <form>
+  <label for="phone">Introduce un número de teléfono:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+  <small>Format: 123-456-789</small><br><br>
+  <input type="submit">
+</form>
+<hr>
+
+<h2>Este es un formulario para introducir un correo electrónico:</h2>
+<form>
+  <label for="email">Introduce tu dirección de Correo Electrónico:</label>
+  <input type="email" id="email" name="email" required>
+  <input type="submit">
+</form>
+<hr>
+
+<h2>Este es un formulario para subir múltiples archivos: </h2>
+<form>
+  <label for="myfile">Sube tus archivos:</label>
+  <input type="file" id="myfile" name="myfile" multiple required><br><br>
+  <input type="submit" value="Subir Archivos">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+<div style="text-align:center"> 
+  <p>La lógica de los botones de este video está hecha con Javascript:</p>
+  <button onclick="playPause()">Reproducir/Pausar</button> 
+  <button onclick="makeBig()">Grande</button>
+  <button onclick="makeSmall()">Pequeño</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="Videos/metro.mp4" type="video/mp4">
+    <source src="Videos/edificio.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+var myVideo = document.getElementById("video1");
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420
+}
+</script>
+<hr>
+
+<div style="text-align: center;">
+    <p>Este video esta hecho con el atributo controls: </p>
+    <video width="320" height="240" controls>
+        <source src="Videos/edificio.mp4">
+        <source src="Videos/metro.mp4">
+    </video>
+    <p>Este video lo he obtenido de <a href="https://www.pexels.com/videos/" target="_blank">Pexels Videos</a></p>
+</div>
+</body>
+</html>

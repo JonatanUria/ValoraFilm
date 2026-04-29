@@ -1,0 +1,73 @@
+.floatleft, #div1, #div2, #div3 {
+  float: left;
+  padding: 15px; 
+}
+
+#div1 {
+  background: red;
+}
+
+#div2 {
+  background: yellow;
+}
+
+#div3 {
+  background: green;
+}   
+
+.floatright, #div4, #div5, #div6 {
+  float: right;
+  padding: 15px; 
+}
+
+#div4 {
+  background: red;
+}
+
+#div5 {
+  background: yellow;
+}
+
+#div6 {
+  background: green;
+}
+/*Ejemplo usando Clear*/
+.floatleft1::after, .floatright1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.floatleft1, #div7, #div8, #div9 {
+  float: left;
+  padding: 15px; 
+}
+
+#div7 {
+  background: red;
+}
+
+#div8 {
+  background: yellow;
+}
+
+#div9 {
+  background: green;
+}   
+
+.floatright1, #div10, #div11, #div12 {
+  float: right;
+  padding: 15px; 
+}
+
+#div10 {
+  background: red;
+}
+
+#div11 {
+  background: yellow;
+}
+
+#div12 {
+  background: green;
+}   

@@ -1,0 +1,36 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.89);
+    border: 2px solid #15c3de;
+    border-radius: 8px;
+}
+
+.profileContainer img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profileContainer p {
+    padding: 0 2px;
+    margin: 1px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profileContainer {
+    min-height: 70vh;
+  }
+}

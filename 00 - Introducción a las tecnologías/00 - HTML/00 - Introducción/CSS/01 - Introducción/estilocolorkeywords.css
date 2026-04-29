@@ -1,0 +1,29 @@
+body {
+    background-image: url(img/fondo.jpg);
+}
+
+#div1 {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+#div2 {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+#div3 {
+    color: red;
+    border: 10px solid currentColor;
+    padding: 15px;
+}
+
+.div4 {
+    border: 2px solid green;
+}
+
+.div4 span {
+    border: inherit;
+}

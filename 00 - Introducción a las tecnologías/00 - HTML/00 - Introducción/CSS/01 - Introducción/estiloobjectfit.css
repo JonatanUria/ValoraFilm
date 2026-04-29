@@ -1,0 +1,40 @@
+.image-container1,
+.image-container2,
+.image-container3,
+.image-container4,
+.image-container5 {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.image-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.image-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container3 img {
+    width: 100%;
+    height: 100;
+    object-fit: contain;
+}
+
+.image-container4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+
+.image-container5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}

@@ -1,0 +1,29 @@
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+}
+
+.container1 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: DodgerBlue;
+}
+
+.container2 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}

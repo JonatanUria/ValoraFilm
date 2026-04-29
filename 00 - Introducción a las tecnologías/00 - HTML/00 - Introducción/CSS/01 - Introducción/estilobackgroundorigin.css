@@ -1,0 +1,23 @@
+#div1 {
+    border: 2px solid black;
+    padding: 35px;
+    background-image: url(img/bookicon.png);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+
+#div2 {
+    border: 2px solid black;
+    padding: 35px;
+    background-image: url(img/bookicon.png);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+#div3 {
+    border: 2px solid black;
+    padding: 35px;
+    background-image: url(img/bookicon.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}

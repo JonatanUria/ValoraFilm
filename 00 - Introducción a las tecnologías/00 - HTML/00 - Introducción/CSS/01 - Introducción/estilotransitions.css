@@ -1,0 +1,25 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+/*Transición del primer div*/
+#divt1 {
+    transition: width 2s;
+}
+
+#divt1:hover {
+    width: 300px;
+}
+
+/*Transición del segundo div*/
+#divt2 {
+    transition: width 2s, height 4s, background-color 3s;
+}
+
+#divt2:hover {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}

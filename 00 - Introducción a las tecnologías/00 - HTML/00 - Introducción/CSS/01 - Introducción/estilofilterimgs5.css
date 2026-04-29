@@ -1,0 +1,11 @@
+#img1 {
+    filter: grayscale(1);
+}
+
+#img2 {
+    filter: grayscale(60%);
+}
+
+#img3 {
+    filter: grayscale(0.4);
+}

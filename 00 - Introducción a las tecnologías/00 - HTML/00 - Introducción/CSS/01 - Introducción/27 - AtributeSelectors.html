@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute Selectors</title>
+    <link rel="stylesheet" href="estiloatributeselectors.css">
+</head>
+
+<body>
+    <h2>Seleccionar atributos con [atributo] y [atributo ="valor"]</h2>
+    <p>En este caso los links con target</p>
+
+    <!--Selector 1-->
+    <a href="https://www.w3schools.com" target="_blank">W3schools.com</a>
+    <a href="https://www.w3schools.com/css/">CSS</a>
+    <a href="https://www.w3schools.com/html/" target="_top">HTML</a>
+
+    <hr>
+    <!--Selector 2-->
+    <h2>Seleccionar con atributos [atributo~="valor"]</h2>
+    <img src="img/green-forest.jpg" title="img" width="150" height="113">
+    <img src="img/mountains.jpg" title="img" width="150" height="113">
+    <img src="img/cinque-terre.jpg" title="cirque terre" width="150" height="113">
+
+    <hr>
+    <!--Selector 3-->
+    <h2>Seleccionar atributos con [attribute|="value"]</h2>
+    <h1 class="top">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+
+    <hr>
+    <!--Selector 4-->
+    <h2>Seleccionar atributos con [attribute^="value"]</h2>
+    <h1 class="top1">Welcome</h1>
+    <p class="top1-text">Hello world!</p>
+    <p class="top1content">Are you learning CSS?</p>
+
+    <hr>
+    <!--Selector 5-->
+    <h2>Seleccionar atributos con [attribute$="value"] y [attribute*="value"]</h2>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+
+
+</body>
+
+</html>

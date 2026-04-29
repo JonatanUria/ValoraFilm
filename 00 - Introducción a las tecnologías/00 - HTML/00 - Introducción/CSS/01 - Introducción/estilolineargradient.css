@@ -1,0 +1,27 @@
+#grad1 {
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to bottom, red, yellow
+    );
+}
+
+#grad2 {
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to top, red, yellow
+    );
+}
+
+#grad3 {
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to right, red, yellow
+    );
+}
+
+#grad4 {
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red, yellow
+    );
+}

@@ -1,0 +1,19 @@
+div {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+/*Estilo función Skew*/
+#divs1 {
+    transform: skew(20deg, 10deg);
+}
+
+#divs2 {
+    transform: skewX(20deg);
+}
+
+#divs3 {
+    transform: skewY(20deg);
+}

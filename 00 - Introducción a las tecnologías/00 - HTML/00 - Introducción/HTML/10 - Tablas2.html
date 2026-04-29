@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas2</title>
+    <style>
+        /*Esto es para la table1*/
+        .table1, .table1 th, .table1 td {
+            border-style: solid;
+            border-collapse: collapse;
+            border-color: darkorange;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        /*Esto es para la table2*/
+        .table2, .table2 th, .table2 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        /*Esto es para la table3*/
+        .table3, .table3 th, .table3 td {
+            border: 1px solid brown;
+            border-collapse: collapse;
+        }
+        /*Esto es para la table4*/
+        .table4, .table4 th, .table4 td {
+        
+            border-collapse: collapse;
+        }
+        .table4 th:nth-child(even), .table4 td:nth-child(even) {
+            background-color: aquamarine;
+        }
+        .table4 tr {
+            border-bottom: 1px solid black;
+        }
+        .table4 tr :hover {
+            background-color: darkmagenta;
+        }
+        /*Esto es para la table5*/
+        .table5, .table5 th, .table5 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table class="table1">
+    <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>Puesto</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>678954M</td>
+        <td>Asesor</td>
+    </tr>
+    <tr>
+        <td>Marcos</td>
+        <td>876769L</td>
+        <td>Abogado</td>
+    </tr>
+    <tr>
+        <td>Aurelio</td>
+        <td>976769S</td>
+        <td>Redactor</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>876769L</td>
+        <td>Administrativa</td>
+    </tr>
+    </table>
+    <hr>
+     <table class="table2">
+        <caption>Trabajadores y Categorías</caption>
+    <tr>
+        <th rowspan="2">Nombre</th>
+        <td>Juan</td>
+        <td>Marcos</td>
+        <td>Aurelio</td>
+        <td>Emma</td>
+    </tr>
+    <tr>
+        <td>Tobías</td>
+        <td>Zacarías</td>
+        <td>Alberto</td>
+        <td>Ignacio</td>
+    </tr>
+    <tr>
+        <th>DNI</th>
+        <td>678954M</td>
+        <td>876769L</td>
+        <td>976769A</td>
+        <td>876769L</td>
+    </tr>
+    <tr>
+        <th>Puesto</th>
+        <td>Redactor</td>
+        <td>Abogado</td>
+        <td>Asesor</td>
+        <td>Administrativo</td>
+    </tr>
+    </table>
+    <hr>
+    <table class="table3">
+        <tr>
+            <th colspan="3">2022</th>
+        </tr>
+        <tr>
+            <td>Nada</td>
+            <td>Nada</td>
+            <td>Nada</td>
+        </tr>
+        <tr>
+        <th rowspan="2" colspan="2">Fiesta</th>
+
+        <td>Nada</td>
+        </tr>
+        <tr>
+            <td>Nada </td>
+            
+        </tr>
+        <tr>
+            <td>Nada</td>
+            <td>Nada</td>
+            <td>Nada</td>
+        </tr>
+        </table>
+        <hr>
+        <table class="table4">
+    <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>Puesto</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>678954M</td>
+        <td>Asesor</td>
+    </tr>
+    <tr>
+        <td>Marcos</td>
+        <td>876769L</td>
+        <td>Abogado</td>
+    </tr>
+    <tr>
+        <td>Aurelio</td>
+        <td>976769S</td>
+        <td>Redactor</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>876769L</td>
+        <td>Administrativa</td>
+    </tr>
+    </table>
+    <hr>
+    <table class="table5">
+        <colgroup>
+  <col span="2">
+  <col span="3" style="background-color: pink">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+    </table>
+
+
+</body>
+</html>

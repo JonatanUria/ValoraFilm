@@ -1,0 +1,28 @@
+/*Primer Ejemplo*/
+#img1 {
+    display: block;
+    margin: auto;
+}
+
+/*Segundo Ejemplo*/
+#div1 {
+    display: flex;
+    justify-content: center;
+}
+
+/*Tercer Ejemplo*/
+#div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border: 1px solid black;
+}
+
+/*Cuarto Ejemplo*/
+#div3 {
+    display: grid;
+    place-items: center;
+    height: 600px;
+    border: 1px solid black;
+}

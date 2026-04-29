@@ -1,0 +1,25 @@
+/*De más específico a más general:
+al ser más específico el p#demo, va a coger
+el estilo de él, podemos usar el !important para
+que no sea lo más específico lo que determine el estilo*/
+p#demo {
+    color: orange
+}
+
+#demo {
+    color:blue !important
+}
+
+/*Al ser más específico el p.test, va a 
+coger el estilo de él*/
+p.test {
+    color: green;
+}
+
+.test {
+    color:black
+}
+
+p {
+    color:brown
+}

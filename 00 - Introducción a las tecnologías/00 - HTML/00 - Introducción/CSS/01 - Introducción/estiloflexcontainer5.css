@@ -1,0 +1,125 @@
+.container1 {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.container1 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container2 {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.container2 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container3 {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.container3 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container4 {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.container4 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container5 {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.container5 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container6 {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.container6 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container7 {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.container7 div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
