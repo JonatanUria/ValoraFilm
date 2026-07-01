@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useState } from "react";
 import Cookies from "js-cookie";
 import { apiFetch } from "@/lib/api";
+import { HiUser, HiFilm, HiArrowRightOnRectangle } from "react-icons/hi2";
+
 
 export default function Header() {
   const { logged, loading, userId, user } = useAuth();
@@ -23,29 +25,32 @@ export default function Header() {
       <nav>
         <Link href="/about">¿Qué es ValoraFilm?</Link >
 
-        <Link href="#" onClick={() => setOpen(!open)} className={styles.bottonright}>
-          Hola {user?.nombreUsuario}
-        </Link>
+        <div className={styles.usermenu}>
+          <Link href="#" onClick={() => setOpen(!open)} className={styles.bottonright}>
+            Hola {user?.nombreUsuario}
+          </Link>
 
-        {open && (
-          <div className={styles.dropdown}>
-            <Link href="/profile">Mi Perfil</Link>
-            <Link href="#">Mis Películas</Link>
-            <Link href="#"
-              onClick={(e) => {
-                e.preventDefault();
+          {open && (
+            <div className={styles.dropdown}>
+              <Link href="/profile" className={styles.menuitem}>
+                <HiUser />Mi Perfil</Link>
+              <Link href="#" className={styles.menuitem}>
+                <HiFilm />Mis Películas</Link>
+              <Link href="#" className={`${styles.menuitem} ${styles.logout}`}
+                onClick={(e) => {
+                  e.preventDefault();
 
 
-                const res = apiFetch("logout", {
-                  method: "POST",
-                  credentials: "include"
-                })
-                
-                window.location.href = "/login"; // o donde quieras mandar
-              }}>Cerrar sesión</Link>
-          </div>
-        )}
+                  const res = apiFetch("logout", {
+                    method: "POST",
+                    credentials: "include"
+                  })
 
+                  window.location.href = "/login";
+                }}> <HiArrowRightOnRectangle />Cerrar sesión</Link>
+            </div>
+          )}
+        </div>
 
       </nav>
     </header>

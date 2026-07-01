@@ -1,5 +1,12 @@
 .footer {
-    padding: 20px;
+    background-color: #2D3748;
+    color: #f3f4f6;
     text-align: center;
-    background: #ddd;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+}
+
+.footer p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
 }

@@ -3,14 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fafafad5;
+    background: linear-gradient(135deg, #f5f7fa, #e9eef5);
 }
 
 .title {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    border-bottom: 2px solid #04AA6D;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0;
+
 }
 
 .form {
@@ -18,13 +19,25 @@
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    max-width: 500px;
-    padding: 24px;
-    text-align: center;
+    max-width: 480px;
+    padding: 1.5rem 1.5rem;
     background-color: rgba(255, 255, 255, 0.89);
-    border: 2px solid #04AA6D;
-    border-radius: 8px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .08),
+        0 4px 10px rgba(0, 0, 0, .04);
+    border-radius: 20px;
 
+}
+
+.formgroup {
+    margin-bottom: 0.75rem;
+}
+
+.form label {
+    margin-bottom: 0.35rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
 }
 
 .form input,
@@ -33,32 +46,114 @@
 }
 
 .form input {
-    padding: 8px 15px;
+    padding: 0.5rem 0.9375rem;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-.form input:not(.button) {
-    background-color: #cbf5e4;
-    color: black;
+.inputwrapper {
+    position: relative;
 }
 
-.profilephoto {
+.inputwrapper input {
+  padding-left: 2.5rem;
+}
+.inputicon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: color 0.2s ease;
+}
+
+.inputwrapper:focus-within .inputicon {
+  color: #4f46e5;
+}
+.passwordcontainer {
+    position: relative;
     width: 100%;
-    padding: 8px 15px;
+}
+
+.eyebutton {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.eyebutton:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+.eyebutton:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.eyebutton svg {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+.eyebutton:focus-visible {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+/*.profilephoto {
+    width: 100%;
+    padding: 0.5rem 0.9375rem;
     background-color: #2deb9b;
     color: black;
 
-}
+}*/
 
 .button {
-    background-color: #4CAF50;
     color: white;
-    padding: 14px;
-    margin: 8px 0;
+    background-color: #4CAF50;
+    padding: 0.875rem;
+    margin: 0.5rem 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .button:hover {
     background-color: #097c0d;
+}
+
+.logintext {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #6b7280;
+}
+
+.logintext a {
+    color: #22c55e;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.logintext a:hover {
+    color: #16a34a;
+    text-decoration: underline;
 }
